@@ -15,6 +15,6 @@ set number
 " color column
 highlight ColorColumn ctermbg=4
 
-" ";" to FZF
-map ; :FZF<CR>
+" ":" to FZF
+cmap : :FZF<CR>
 
