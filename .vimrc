@@ -1,6 +1,6 @@
 call plug#begin('~/.vim/plugged')
 Plug 'editorconfig/editorconfig-vim'
-Plug 'junegunn/fzf.vim'
+Plug '~/.fzf'
 Plug 'posva/vim-vue'
 Plug 'vim-airline/vim-airline'
 call plug#end()
