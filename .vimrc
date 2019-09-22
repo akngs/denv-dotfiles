@@ -6,6 +6,7 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'mattn/emmet-vim'
 Plug 'posva/vim-vue'
 Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
 " Hide mode since vim-airline already shows it
@@ -16,6 +17,10 @@ set number
 
 " vim-vue
 let g:vue_pre_processors = 'detect_on_enter'
+
+" vim-airline
+let g:airline_solarized_bg='dark'
+let g:airline_theme='solarized'
 
 " ale
 let g:ale_fixers = { '*': ['trim_whitespace'] }
