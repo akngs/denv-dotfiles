@@ -32,6 +32,7 @@ let g:airline#extensions#ale#enabled = 1
 
 " highlight
 set hlsearch
+set incsearch
 hi Search ctermbg=LightYellow
 hi Search ctermfg=Black
 
