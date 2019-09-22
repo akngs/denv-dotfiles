@@ -1,8 +1,10 @@
 call plug#begin('~/.vim/plugged')
+
 Plug '~/.fzf'
 Plug 'cakebaker/scss-syntax.vim'
 Plug 'dense-analysis/ale'
 Plug 'editorconfig/editorconfig-vim'
+Plug 'tpope/vim-fugitive'
 Plug 'mattn/emmet-vim'
 Plug 'posva/vim-vue'
 Plug 'vim-airline/vim-airline'
@@ -19,8 +21,8 @@ set number
 let g:vue_pre_processors = 'detect_on_enter'
 
 " vim-airline
-let g:airline_solarized_bg='dark'
-let g:airline_theme='solarized'
+let g:airline_theme='bubblegum'
+let g:airline_powerline_fonts = 1
 
 " ale
 let g:ale_fixers = { '*': ['trim_whitespace'] }
