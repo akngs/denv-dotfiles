@@ -46,3 +46,7 @@ highlight SignColumn ctermbg=0
 " Key maps
 cmap : :FZF<CR>
 
+noremap <Up> <Nop>
+noremap <Down> <Nop>
+noremap <Left> <Nop>
+noremap <Right> <Nop>
