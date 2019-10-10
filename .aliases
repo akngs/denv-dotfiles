@@ -1,0 +1,15 @@
+# "cd" shortcuts
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+
+# ls
+alias ls="ls --color=auto"
+alias ll="ls -als --color=auto"
+
+# colors
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+
