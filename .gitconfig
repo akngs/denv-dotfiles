@@ -1,3 +1,5 @@
 [user]
 	email = jania902@gmail.com
 	name = akngs
+[alias]
+	lg = log --graph --oneline
