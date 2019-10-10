@@ -3,3 +3,7 @@
 	name = akngs
 [alias]
 	lg = log --graph --oneline
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
