@@ -19,7 +19,7 @@ let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 set t_Co=256
 set termguicolors
 set background=dark
-" let g:solarized_termtrans = 1
+let g:solarized_termtrans = 1
 colorscheme solarized8
 
 " Hide mode since vim-airline already shows it
@@ -27,6 +27,7 @@ set noshowmode
 
 " Show line number
 set number
+highlight LineNr guifg=#444444 guibg=NONE
 
 " vim-vue
 let g:vue_pre_processors = 'detect_on_enter'
