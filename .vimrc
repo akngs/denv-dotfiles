@@ -19,6 +19,7 @@ let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 set t_Co=256
 set termguicolors
 set background=dark
+" let g:solarized_termtrans = 1
 colorscheme solarized8
 
 " Hide mode since vim-airline already shows it
@@ -31,7 +32,7 @@ set number
 let g:vue_pre_processors = 'detect_on_enter'
 
 " vim-airline
-let g:airline_theme='bubblegum'
+let g:airline_theme='solarized'
 let g:airline_powerline_fonts = 1
 
 " ale
