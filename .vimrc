@@ -9,7 +9,17 @@ Plug 'mattn/emmet-vim'
 Plug 'posva/vim-vue'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'lifepillar/vim-solarized8'
+
 call plug#end()
+
+" Truecolor support
+let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+set t_Co=256
+set termguicolors
+set background=dark
+colorscheme solarized8
 
 " Hide mode since vim-airline already shows it
 set noshowmode
@@ -32,20 +42,10 @@ let g:ale_lint_on_enter = 0
 let g_ale_lint_on_save = 1
 let g:ale_fix_on_save = 1
 let g:airline#extensions#ale#enabled = 1
-let g:ale_sign_error = 'e'
-let g:ale_sign_warning = 'w'
-highlight ALEErrorSign ctermbg=red ctermfg=red
-highlight ALEWarningSign ctermbg=yellow ctermfg=yellow
 
 " highlight
 set hlsearch
 set incsearch
-hi Search ctermbg=LightYellow
-hi Search ctermfg=Black
-
-" Colors
-highlight ColorColumn ctermbg=4
-highlight SignColumn ctermbg=0
 
 " Key maps
 cmap : :FZF<CR>
