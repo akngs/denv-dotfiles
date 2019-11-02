@@ -66,6 +66,8 @@ let g:ale_lint_on_enter = 0
 let g_ale_lint_on_save = 1
 let g:ale_fix_on_save = 1
 let g:airline#extensions#ale#enabled = 1
+highlight ALEError ctermbg=none cterm=underline
+highlight ALEWarning ctermbg=none cterm=underline
 
 " highlight
 set hlsearch
