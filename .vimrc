@@ -20,7 +20,12 @@ set t_Co=256
 set termguicolors
 set background=dark
 let g:solarized_termtrans = 1
-colorscheme solarized8
+try
+    colorscheme solarized8
+catch /^Vim\%((\a\+)\)\=:E185/
+    " deal with it
+endtry
+
 
 " Hide mode since vim-airline already shows it
 set noshowmode

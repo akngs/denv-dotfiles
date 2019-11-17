@@ -97,6 +97,7 @@ poetry completions bash > /etc/bash_completion.d/poetry.bash-completion
 export GPG_TTY=$(tty)
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+clear
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
