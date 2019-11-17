@@ -79,7 +79,7 @@ fi
 
 # vim
 if [ ! -f /root/.config/vim-plug-installed ]; then
-    vim '+PlugInstall --sync' +qall &> /dev/null
+    vim '+PlugInstall --sync' +qall
     touch /root/.config/vim-plug-installed
 fi
 export EDITOR=vim
