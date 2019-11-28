@@ -72,25 +72,25 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 # yadm
-if [ ! -d /root/.yadm ]; then
+if [ ! -d ~/.yadm ]; then
     yadm clone https://github.com/akngs/denv-dotfiles
     cp ~/.config/yadm.git.config ~/.yadm/repo.git/config
 fi
 
 # vim
-if [ ! -f /root/.config/vim-plug-installed ]; then
+if [ ! -f ~/.config/vim-plug-installed ]; then
     vim '+PlugInstall --sync' +qall
-    touch /root/.config/vim-plug-installed
+    touch ~/.config/vim-plug-installed
 fi
 export EDITOR=vim
 
 # pyenv
-export PATH="/root/.pyenv/bin:$PATH"
+export PATH="~/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
 # poetry
-export PATH="/root/.poetry/bin:$PATH"
+export PATH="~/.poetry/bin:$PATH"
 poetry completions bash > /etc/bash_completion.d/poetry.bash-completion
 
 # misc.
